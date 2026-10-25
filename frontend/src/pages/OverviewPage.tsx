@@ -38,12 +38,12 @@ export const OverviewPage: React.FC = () => {
           ========================================================================= */}
       <section style={{
         position: 'relative',
-        minHeight: '840px',
+        minHeight: '880px',
         color: '#FFFFFF',
         backgroundImage: `linear-gradient(180deg, rgba(7, 23, 43, 0.45) 0%, rgba(7, 23, 43, 0.85) 100%), url('/images/hero_sunnova_wind.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center 40%',
-        padding: '36px 0 130px 0',
+        padding: '36px 0 140px 0',
         overflow: 'hidden',
       }}>
         
@@ -138,10 +138,10 @@ export const OverviewPage: React.FC = () => {
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))',
               gap: '48px',
-              alignItems: 'center',
+              alignItems: 'flex-end',
               marginTop: 'auto',
-              paddingTop: '36px',
-              paddingBottom: '20px',
+              paddingTop: '60px',
+              paddingBottom: '24px',
             }}
           >
             {/* Left Copy: Glides in from LEFT */}
@@ -149,6 +149,7 @@ export const OverviewPage: React.FC = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
+              style={{ paddingBottom: '12px' }}
             >
               <h1 style={{
                 fontFamily: 'var(--font-display)',
@@ -204,11 +205,17 @@ export const OverviewPage: React.FC = () => {
               </div>
             </motion.div>
 
-            {/* Right Column: Glides in from RIGHT with 3D Tilt Card */}
+            {/* Right Column: Glides in from RIGHT with 3D Tilt Card (Positioned lower in hero) */}
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.85, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'flex-end',
+                marginTop: '70px',
+              }}
             >
               <Hero3DTiltCard
                 peakMW={overview?.peakActualGenerationMW || 16420}
