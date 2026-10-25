@@ -83,7 +83,7 @@ export const OverviewPage: React.FC = () => {
           </motion.div>
         </div>
 
-        <div className="container" style={{ position: 'relative', zIndex: 2, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '680px' }}>
+        <div className="container" style={{ position: 'relative', zIndex: 2, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '560px' }}>
           
           {/* Top Bar inside Hero */}
           <motion.div
@@ -140,7 +140,7 @@ export const OverviewPage: React.FC = () => {
               gap: '48px',
               alignItems: 'center',
               marginTop: 'auto',
-              paddingTop: '110px',
+              paddingTop: '36px',
               paddingBottom: '20px',
             }}
           >
@@ -152,7 +152,7 @@ export const OverviewPage: React.FC = () => {
             >
               <h1 style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(2.4rem, 4.4vw, 3.8rem)',
+                fontSize: 'clamp(1.9rem, 3.4vw, 3rem)',
                 fontWeight: 800,
                 lineHeight: 1.12,
                 letterSpacing: '-0.025em',
@@ -163,13 +163,13 @@ export const OverviewPage: React.FC = () => {
               </h1>
 
               <p style={{
-                fontSize: '1.05rem',
+                fontSize: '0.96rem',
                 color: '#F1F5F9',
                 lineHeight: 1.55,
                 fontWeight: 400,
                 marginBottom: '32px',
                 textShadow: '0 2px 8px rgba(0,0,0,0.4)',
-                maxWidth: '560px',
+                maxWidth: '480px',
               }}>
                 High-performance wind generation forecasts, actual outturns, and quantified error metrics for UK utilities and power procurement desks.
               </p>
@@ -226,7 +226,7 @@ export const OverviewPage: React.FC = () => {
           3 FLOATING CARDS — DIRECTIONAL REVEAL:
           Card 1 from LEFT, Card 2 from MIDDLE, Card 3 from RIGHT
           ========================================================================= */}
-      <section style={{ marginTop: '-75px', position: 'relative', zIndex: 10, paddingBottom: '48px' }}>
+      <section style={{ marginTop: '-55px', position: 'relative', zIndex: 10, paddingBottom: '48px' }}>
         <div className="container">
           <div style={{
             display: 'grid',
@@ -242,7 +242,7 @@ export const OverviewPage: React.FC = () => {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="floating-card"
-              style={{ padding: '26px', display: 'flex', justifyContent: 'space-between', alignItems: 'stretch', borderRadius: '20px', minHeight: '185px' }}
+              style={{ padding: '20px 22px', display: 'flex', justifyContent: 'space-between', alignItems: 'stretch', borderRadius: '18px', minHeight: '160px' }}
             >
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', paddingRight: '16px' }}>
                 <div>
@@ -267,7 +267,7 @@ export const OverviewPage: React.FC = () => {
                 </Link>
               </div>
 
-              <div style={{ width: '130px', height: '140px', borderRadius: '14px', overflow: 'hidden', flexShrink: 0 }}>
+              <div style={{ width: '115px', height: '125px', borderRadius: '12px', overflow: 'hidden', flexShrink: 0 }}>
                 <img
                   src="/images/card_utilities_wind.jpg"
                   alt="Offshore wind turbines"

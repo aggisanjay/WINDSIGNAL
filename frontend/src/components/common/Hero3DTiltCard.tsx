@@ -53,7 +53,7 @@ export const Hero3DTiltCard: React.FC<Hero3DTiltCardProps> = ({
       style={{
         perspective: '1200px',
         width: '100%',
-        maxWidth: '520px',
+        maxWidth: '460px',
         margin: '0 auto',
       }}
     >
@@ -69,7 +69,7 @@ export const Hero3DTiltCard: React.FC<Hero3DTiltCardProps> = ({
           background: 'linear-gradient(145deg, rgba(15, 23, 42, 0.85) 0%, rgba(7, 23, 43, 0.95) 100%)',
           border: '1px solid rgba(255, 255, 255, 0.18)',
           boxShadow: '0 30px 60px -12px rgba(0, 0, 0, 0.5), 0 0 35px rgba(245, 158, 11, 0.15)',
-          padding: '28px',
+          padding: '22px',
           position: 'relative',
           overflow: 'hidden',
           cursor: 'pointer',
@@ -154,7 +154,7 @@ export const Hero3DTiltCard: React.FC<Hero3DTiltCardProps> = ({
               position: 'relative',
               borderRadius: '16px',
               overflow: 'hidden',
-              height: '190px',
+              height: '160px',
               marginBottom: '20px',
               transform: 'translateZ(40px)',
               boxShadow: '0 12px 30px rgba(0, 0, 0, 0.4)',

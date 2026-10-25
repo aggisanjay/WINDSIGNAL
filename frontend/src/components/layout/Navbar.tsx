@@ -19,11 +19,11 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { to: '/', label: 'Overview' },
-    { to: '/forecast', label: 'Day-Ahead Forecast' },
-    { to: '/accuracy', label: 'Accuracy & Risk' },
-    { to: '/publications', label: 'Vintage Curves' },
+    { to: '/forecast', label: 'Forecast' },
+    { to: '/accuracy', label: 'Accuracy' },
+    { to: '/publications', label: 'Vintages' },
     { to: '/methodology', label: 'Methodology' },
-    { to: '/status', label: 'System Health' },
+    { to: '/status', label: 'Health' },
   ];
 
   // Permanent deep dark navy navbar background - never transparent or white
@@ -47,13 +47,13 @@ export const Navbar: React.FC = () => {
       <div
         style={{
           width: '100%',
-          maxWidth: '1440px',
+          maxWidth: '1280px',
           margin: '0 auto',
-          padding: '0 28px',
+          padding: '0 20px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          height: '74px',
+          height: '70px',
           flexWrap: 'nowrap',
         }}
       >
@@ -130,7 +130,7 @@ export const Navbar: React.FC = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '22px',
+            gap: '14px',
             flexWrap: 'nowrap',
           }}
           className="desktop-nav"
@@ -140,10 +140,10 @@ export const Navbar: React.FC = () => {
               key={link.to}
               to={link.to}
               style={({ isActive }) => ({
-                fontSize: '0.9rem',
+                fontSize: '0.86rem',
                 fontWeight: isActive ? 700 : 500,
                 color: isActive ? '#FFFFFF' : 'rgba(255, 255, 255, 0.8)',
-                padding: '6px 2px',
+                padding: '6px 6px',
                 position: 'relative',
                 textDecoration: 'none',
                 transition: 'color 0.2s ease',
@@ -175,7 +175,7 @@ export const Navbar: React.FC = () => {
         </nav>
 
         {/* Right Action Items: Telemetry + Search + Solar Amber Pill Button (No White) */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexShrink: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
           
           {/* Compact Telemetry Pill */}
           <Link
